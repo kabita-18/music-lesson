@@ -6,7 +6,7 @@ import Header from './Header';
 
 const Home = () => {
     return (
-        <div className="flex text-2xl font-semibold ">
+        <div className="flex text-2xl h-[100%] font-semibold ">
             {/* <Header/> */}
             <Leftsection/>
             <Rightsection/>

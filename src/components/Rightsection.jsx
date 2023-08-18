@@ -10,7 +10,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export function Rightsection() {
   return (
-    <Card className="w-full overflow-hidden bg-[#F0F0F0]">
+    <Card className="w-full h-[100%] overflow-hidden bg-[#F0F0F0] text-[#616161]">
       <CardHeader
         floated={false}
         shadow={false}
@@ -26,7 +26,7 @@ export function Rightsection() {
       <CardBody className="px-6">
         <Typography
           variant="h6"
-          className="p-3 px-0 align-left font-medium text-base color-[#616161]"
+          className="p-3 px-0 align-left font-medium text-base"
         >
           Music Instruments
         </Typography>
@@ -39,7 +39,7 @@ export function Rightsection() {
               alt="user"
             />
           </div>
-          <Typography className="text-black px-4  font-medium">
+          <Typography className="px-4  font-medium">
             Learn about
           </Typography>
         </div>
@@ -53,7 +53,7 @@ export function Rightsection() {
           <AiFillStar className="inline" />
           <Typography className="inline"> Rate your favrorite</Typography>
         </div>
-        <Typography className="text-black text-base mt-4  font-medium">
+        <Typography className="text-base mt-4  font-medium">
           About the course
         </Typography>
         <Typography color="gray" className="mt-3 ">

@@ -11,7 +11,7 @@ function App() {
       <div className='flex'>
     <Router>
         <Leftmenu/>
-        <div className='p-7 flex flex-col'>
+        <div className='p-7 pb-0 h-[100vh] flex flex-col'>
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path="/courses" element={<Course/>} />
