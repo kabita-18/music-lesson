@@ -47,11 +47,11 @@ const cardData = [
 
 function Box() {
   return (
-    <div className="flex flex-col space-x-1 py-5"style={{ margin: "-0.10rem" }}>
+    <div className="flex flex-col space-x-1 pt-5">
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className="w-[500px] flex-row h-[150px] rounded-lg bg-[#F0F0F0] mb-2 p-2"
+          className="w-[500px] flex-row h-[140px] rounded-lg bg-[#F0F0F0] mb-2 p-2"
         >
           <CardHeader
             
