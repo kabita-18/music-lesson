@@ -51,21 +51,19 @@ function Box() {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className="w-[530px] flex flex-row md:flex-row -z-50 h-[130px] rounded-2xl bg-[#F0F0F0] mb-2 p-2"
+          className="w-auto sm:w-[530px] flex flex-col sm:flex-row h-auto sm:h-[130px] rounded-2xl bg-[#F0F0F0] mb-2 p-2  hover:bg-[#ffffff] cursor-pointer"
         >
-          <CardHeader
-            
-            className="m-0 w-2/5 shrink-0 flex items-center bg-[#F0F0F0]"
+          <div  
+            className="m-0 w-full sm:w-2/5 shrink-0 flex items-center justify-center sm:justify-normal"
           >
             <img
               src={card.src}
-              className="h-9/12 w-9/12 object-cover rounded-lg"
+              className="w-full sm:h-9/12 sm:w-9/12 h-full object-cover rounded-lg"
               alt={`card${index}`}
-            />
-            
-          </CardHeader>
-          <CardBody className="md:w-3/5">
-            <Typography variant="h6" color="gray" className="mb-4  md:mb-0 uppercase w-full" sx={{width:"100%"}}>
+            />  
+          </div>
+          <CardBody className="sm:w-3/5">
+            <Typography variant="h6" color="gray" className="mb-4  sm:mb-0 uppercase w-full" sx={{width:"100%"}}>
              <span className="flex flex-row justify-between ">
                 {card.title}
                 {card.icon}
@@ -76,7 +74,7 @@ function Box() {
               {card.subtitle}
             </Typography>
             <div className="w-[80%] h-[5px] bg-gradient-to-r from-[#DEDEDE] to-[#ffffff]"></div>
-            <Typography color="gray" className="mb-8 font-thin text-base md:mb-5">
+            <Typography color="gray" className="mb-8 font-thin text-base sm:mb-5">
               {card.description}
             </Typography>
           </CardBody>

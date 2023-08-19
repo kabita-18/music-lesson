@@ -10,7 +10,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export function Rightsection() {
   return (
-    <Card className="w-full -z-50 bg-[#F0F0F0] text-[#616161]">
+    <Card className="w-full z-0 bg-[#F0F0F0] text-[#616161]">
       <CardHeader
         floated={false}
         shadow={false}
@@ -26,13 +26,14 @@ export function Rightsection() {
       <CardBody className="px-6">
         <Typography
           variant="h6"
-          className="p-3 px-0 align-left font-medium text-base"
+          className="p-5 px-0 align-left font-medium text-base"
         >
           Music Instruments
         </Typography>
 
-        <div className="flex bg-white rounded-full sm:w-full ml-2 md:w-[250px]">
-          <div className="h-8 w-8 overflow-hidden rounded-full cursor-pointer  mr-2 self-center mb-2 md:mb-0">
+        <div className="p-2">
+        <div className="flex bg-white rounded-full sm:w-full  md:w-[250px] ml-2">
+          <div className="h-8 w-8 overflow-hidden rounded-full cursor-pointer self-center mb-2 md:mb-0">
             <img
               className="rounded-full"
               src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg"
@@ -45,12 +46,15 @@ export function Rightsection() {
         </div>
 
         <div className="flex items-center">
-          <BiSolidTimeFive className="inline" />
-          <Typography className="inline ml-2"> Track your practice time</Typography>
+          <BiSolidTimeFive className="inline text-black" />
+          <Typography className="inline ml-2">
+            {" "}
+            Track your practice time
+          </Typography>
         </div>
 
         <div className="flex items-center">
-          <AiFillStar className="inline" />
+          <AiFillStar className="inline text-black" />
           <Typography className="inline ml-2"> Rate your favrorite</Typography>
         </div>
         <Typography className="text-base mt-4  font-medium">
@@ -61,6 +65,8 @@ export function Rightsection() {
           covers everything from basic to advanced techniques, helping you play
           any instrument with confidence.
         </Typography>
+        </div>
+       
       </CardBody>
     </Card>
   );

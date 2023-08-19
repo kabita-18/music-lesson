@@ -24,9 +24,9 @@ const Leftmenu = () => {
      
 
       <div
-        className={`bg-black fixed z-99 h-screen p-5 pt-8 ${
+        className={`bg-black fixed h-screen p-5 pt-8 ${
           open ? "w-72" : "w-20"
-        } duration-300 h-full`} style={{height: "100%"}}
+        } duration-300 h-full`} style={{height: "100%", zIndex: "1"}}
       >
         <IoMdArrowRoundBack
           className={`bg-white text-dark-black text-3xl rounded-full absolute -right-3 top-9 border border-dark-black cursor-pointer ${

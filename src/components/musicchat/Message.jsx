@@ -57,7 +57,7 @@ const Message = () => {
                   />
                 )}
 
-                <p>
+                <div>
                   <p className="flex justify-between">
                     <span className="text-xs">
                       {message.sender === "you" ? "You" : profileNames[1]}
@@ -65,7 +65,7 @@ const Message = () => {
                     <span className="text-xs">{message.time}</span>
                   </p>
                   <p className="bg-[#f0f0f0] rounded-lg p-3 text-sm">{message.text}</p>
-                </p>
+                </div>
               </div>
             </div>
           </div>

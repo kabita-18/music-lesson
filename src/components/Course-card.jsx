@@ -11,7 +11,7 @@ import { BiSolidStopwatch } from "react-icons/bi";
 
 const CourseCard = () => {
   return (
-    <Card className="w-400 rounded-lg p-3">
+    <Card className="w-400 rounded-lg p-3 static">
       <div className="flex justify-between items-center mx-3 ">
         <h3 className="font-bold">Music Basics</h3>
         <div className="flex item-center rounded-full">
