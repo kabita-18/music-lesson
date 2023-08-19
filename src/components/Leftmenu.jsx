@@ -10,7 +10,7 @@ import {AiFillSetting} from "react-icons/ai"
 import {Link} from "react-router-dom"
 
 const Leftmenu = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const Menus = [
     {title: "Practices"},
     {title: "Courses", icon:<ImHome/>},
@@ -21,10 +21,12 @@ const Leftmenu = () => {
   ];
   return (
     <>
+     
+
       <div
-        className={`bg-black h-screen p-5 pt-8 ${
+        className={`bg-black fixed z-99 h-screen p-5 pt-8 ${
           open ? "w-72" : "w-20"
-        } duration-300 relative`}
+        } duration-300 h-full`} style={{height: "100%"}}
       >
         <IoMdArrowRoundBack
           className={`bg-white text-dark-black text-3xl rounded-full absolute -right-3 top-9 border border-dark-black cursor-pointer ${
@@ -40,18 +42,21 @@ const Leftmenu = () => {
             alt="user"
         />}
 
-        <div className={`flex  bg-white rounded-full p-2 ${!open && "hidden"}`}>
+        <div className={`flex  bg-white rounded-full p-2 ${!open && "hidden"} `}>
 
-          <div className={`h-8 w-8 overflow-hidden rounded-full md:ml-4 cursor-pointer  mr-2 ${open && "mr-2"}`}>
+          <div className={`h-10 w-10 overflow-hidden rounded-full md:ml-4 cursor-pointer  mr-2 ${open && "mr-2"}`}>
             <img className="rounded-full"
               src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg"
               alt="user"
             />
           </div>
-          <h1 className={`text-black px-4  font-medium ${!open && "scale-0"} `}>
+          <div className="flex flex-col">
+          <h1 className={`text-black px-2  font-medium whitespace-nowrap ${!open && "scale-0"} `}>
             Music Theory
           </h1>
-          {/* <p>musiclearner@musicme</p> */}
+          <p className="underline pr-1">musiclearner@musicme</p>
+          </div>
+         
         </div>
 
         <ul className="pt-2">

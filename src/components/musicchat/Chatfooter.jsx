@@ -19,7 +19,7 @@ const IconBlock = ({ icon, text }) => {
 
 const Chatfooter = () => {
   return (
-    <div>
+    <div className='px-4'>
       <IconBlock icon={<PiBookOpenTextThin />} text="Important Practises" />
       <IconBlock icon={<AiOutlineHome />} text="Assignment" />
       <IconBlock icon={<SlNote />} text="Music Notes" />

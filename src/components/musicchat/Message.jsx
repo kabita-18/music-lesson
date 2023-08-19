@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsArrowRight } from "react-icons/bs";
+import { MdSend } from "react-icons/md";
 
 const Message = () => {
   const profileNames = ["John Doe", "Jane Smith"];
@@ -40,8 +40,8 @@ const Message = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col">
-      <div className="flex flex-col p-4 overflow-y-scroll">
+    <div className="h-[420px] w-[300px] flex flex-col ">
+      <div className="flex flex-col p-4 overflow-y-scroll no-scrollbar">
         {messages.map((message, index) => (
           <div
             key={index}
@@ -71,15 +71,15 @@ const Message = () => {
           </div>
         ))}
       </div>
-      <div className="bg-gray-200 p-4">
+      <div className="p-4">
         <div className="flex">
           <input
             type="text"
-            className="flex-1 p-2 rounded-lg border border-gray-300 focus:outline-none"
+            className="flex-1 p-2 rounded-3xl border border-gray-300 focus:outline-none"
             placeholder="Type your comment..."
           />
           <button className=" text-grey p-2 rounded-lg" onClick={sendMessage}>
-            <BsArrowRight />
+            <MdSend />
           </button>
         </div>
       </div>

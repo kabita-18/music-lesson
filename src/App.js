@@ -8,10 +8,10 @@ import Course from './components/Course';
 
 function App() {
   return (
-      <div className='flex'>
+      <div className='flex demo'>
     <Router>
         <Leftmenu/>
-        <div className='p-7 pb-0 h-[100vh] flex flex-col'>
+        <div className='p-7 pb-0 ml-20 flex flex-col'>
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path="/courses" element={<Course/>} />

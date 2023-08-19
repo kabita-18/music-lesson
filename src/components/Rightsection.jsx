@@ -10,7 +10,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export function Rightsection() {
   return (
-    <Card className="w-full h-[100%] overflow-hidden bg-[#F0F0F0] text-[#616161]">
+    <Card className="w-full -z-50 bg-[#F0F0F0] text-[#616161]">
       <CardHeader
         floated={false}
         shadow={false}
@@ -32,26 +32,26 @@ export function Rightsection() {
         </Typography>
 
         <div className="flex bg-white rounded-full sm:w-full ml-2 md:w-[250px]">
-          <div className="h-8 w-8 overflow-hidden rounded-full cursor-pointer  mr-2 ">
+          <div className="h-8 w-8 overflow-hidden rounded-full cursor-pointer  mr-2 self-center mb-2 md:mb-0">
             <img
               className="rounded-full"
               src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg"
               alt="user"
             />
           </div>
-          <Typography className="px-4  font-medium">
+          <Typography className="px-4 font-medium text-center md:text-left">
             Learn about
           </Typography>
         </div>
 
-        <div>
+        <div className="flex items-center">
           <BiSolidTimeFive className="inline" />
-          <Typography className="inline"> Track your practice time</Typography>
+          <Typography className="inline ml-2"> Track your practice time</Typography>
         </div>
 
-        <div>
+        <div className="flex items-center">
           <AiFillStar className="inline" />
-          <Typography className="inline"> Rate your favrorite</Typography>
+          <Typography className="inline ml-2"> Rate your favrorite</Typography>
         </div>
         <Typography className="text-base mt-4  font-medium">
           About the course

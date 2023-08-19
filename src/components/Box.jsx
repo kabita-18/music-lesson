@@ -51,7 +51,7 @@ function Box() {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className="w-[500px] flex-row h-[140px] rounded-lg bg-[#F0F0F0] mb-2 p-2"
+          className="w-[530px] flex flex-row md:flex-row -z-50 h-[130px] rounded-2xl bg-[#F0F0F0] mb-2 p-2"
         >
           <CardHeader
             
@@ -64,8 +64,8 @@ function Box() {
             />
             
           </CardHeader>
-          <CardBody className="w-3/5">
-            <Typography variant="h6" color="gray" className="mb-4 uppercase w-full" sx={{width:"100%"}}>
+          <CardBody className="md:w-3/5">
+            <Typography variant="h6" color="gray" className="mb-4  md:mb-0 uppercase w-full" sx={{width:"100%"}}>
              <span className="flex flex-row justify-between ">
                 {card.title}
                 {card.icon}
@@ -76,7 +76,7 @@ function Box() {
               {card.subtitle}
             </Typography>
             <div className="w-[80%] h-[5px] bg-gradient-to-r from-[#DEDEDE] to-[#ffffff]"></div>
-            <Typography color="gray" className="mb-8 font-thin text-base">
+            <Typography color="gray" className="mb-8 font-thin text-base md:mb-5">
               {card.description}
             </Typography>
           </CardBody>

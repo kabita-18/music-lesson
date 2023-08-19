@@ -4,9 +4,9 @@ import CourseCard from "./Course-card";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import guitar1 from "../images/guitar1.jpg";
-import guitar2 from "../images/guitar2.jpg";
+
 import band from "../images/band.jpg";
-import monkey from "../images/monkey.jpg";
+
 import bassguitar from "../images/bass-guitar.jpg";
 import { BsFillMicMuteFill } from "react-icons/bs";
 import Chat from "./musicchat/Chat";
@@ -26,17 +26,17 @@ const Course = () => {
           </span>
         </div>
 
-        <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-5">
-          <div class="w-full rounded hover:shadow-2xl relative">
+        <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-5 md:grid md:grid-row-1">
+          <div class="w-full rounded hover:shadow-2xl relative ">
             <img src={guitar1} alt="guitar" className="rounded-2xl"/>
             <BsFillMicMuteFill class="absolute bottom-2 right-2 text-white " />
           </div>
-          <div class="w-full rounded hover:opacity-50 relative">
+          <div class="w-full rounded hover:shadow-2xl relative">
             <img src={bassguitar} className="rounded-2xl" alt="guitar" />
             <BsFillMicMuteFill class="absolute bottom-2 right-2 text-white" />
           </div>
           <div class="w-full rounded hover:shadow-2xl relative">
-            <img src={band} alt="guitar" />
+            <img src={band} className="rounded-2xl" alt="guitar" />
             <BsFillMicMuteFill class="absolute bottom-2 right-2 text-white" />
           </div>
           <div class="w-full rounded hover:shadow-2xl relative">
