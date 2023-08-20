@@ -7,6 +7,7 @@ import {
 import concert from "../images/concert.jpg";
 import { BiSolidTimeFive } from "react-icons/bi";
 import { AiFillStar } from "react-icons/ai";
+import AboutButtons from "./AboutButtons";
 
 export function Rightsection() {
   return (
@@ -15,12 +16,12 @@ export function Rightsection() {
         floated={false}
         shadow={false}
         color="transparent"
-        className="m-0 rounded-none flex justify-center"
+        className="m-0 rounded-lg flex justify-center"
       >
         <img
           src={concert}
           alt="instrument"
-          className="w-[90%] h-[380px] rounded-md shadow-md border border-gray-300  m-2"
+          className="w-[90%]  rounded-lg shadow-md border border-gray-300  m-2"
         />
       </CardHeader>
       <CardBody className="px-6">
@@ -31,7 +32,7 @@ export function Rightsection() {
 
           <div className={`flex w-[160px] bg-white rounded-full p-1  `}>
             <div
-              className={`h-8 w-8 overflow-hidden rounded-full md:ml-4 cursor-pointer  mr-2 `}
+              className={`h-8 w-8 overflow-hidden rounded-full  cursor-pointer  mr-2 `}
             >
               <img
                 className="rounded-full"
@@ -61,16 +62,17 @@ export function Rightsection() {
               Rate your favrorite
             </Typography>
           </div>
-          <Typography className="text-base mt-4  font-medium">
+          <Typography className="text-base mt-3 font-medium">
             About the course
           </Typography>
-          <Typography color="gray" className="mt-3 ">
+          <Typography color="gray" className="mt-2 text-sm">
             Learn music notes and theory to become a skilled musician. This
             course covers everything from basic to advanced techniques, helping
             you play any instrument with confidence.
           </Typography>
         </div>
       </CardBody>
+      <AboutButtons/>
     </Card>
   );
 }

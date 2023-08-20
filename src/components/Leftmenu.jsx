@@ -12,11 +12,11 @@ import { Link } from "react-router-dom";
 const Leftmenu = () => {
   const [open, setOpen] = useState(false);
   const Menus = [
-    { title: "Practices" },
-    { title: "Courses", icon: <ImHome /> },
-    { title: "Progress", icon: <AiFillCheckCircle /> },
-    { title: "Instructor", icon: <FiUsers /> },
-    { title: "Music Notes", icon: <TbNotesOff /> },
+    { title: "Practices", path: "/" },
+    { title: "Courses", path: "Courses", icon: <ImHome /> },
+    { title: "Progress", path: "Courses", icon: <AiFillCheckCircle /> },
+    { title: "Instructor", path: "Courses", icon: <FiUsers /> },
+    { title: "Music Notes", path: "Courses", icon: <TbNotesOff /> },
   ];
 
  
@@ -36,13 +36,14 @@ const Leftmenu = () => {
         />
 
         {!open && (
-          <a href="/" className="cursor-pointer rounded-full">
+          <Link to="/" className="cursor-pointer rounded-full">
+            
           <img
             className="cursor-pointer rounded-full"
             src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg"
             alt="user"
           />
-          </a>
+          </Link>
         )}
 
         <div
@@ -74,7 +75,7 @@ const Leftmenu = () => {
         <ul className="pt-2">
           {Menus.map((menu, index) => (
             <Link
-              to={`/${menu.title}`}
+              to={`${menu.path}`}
               key={index}
               className="text-white text-l flex items-center gap-x-4 cursor-pointer  hover:bg-white hover:text-black rounded-full p-3 mt-1"
             >

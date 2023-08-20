@@ -1,12 +1,12 @@
 import React from "react";
-import Leftsection from "./Leftsection";
-import Rightsection from "./Rightsection";
+import MusicTheories from "./MusicTheories";
+import AboutSection from "./AboutSection";
 
 const Home = () => {
   return (
     <div className="flex flex-col md:flex-row  text-2xl font-semibold">
-      <Leftsection />
-      <Rightsection />
+      <MusicTheories />
+      <AboutSection />
     </div>
   );
 };
