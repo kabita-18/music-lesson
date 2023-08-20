@@ -11,7 +11,7 @@ const Chat = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-4 md:[-ml-6] ">
       <div className="h-full bg-white border border-black-200 rounded-2xl px-6 py-6 ml-7 ">
         <div className="flex flex-row justify-between w-full text-base">
           <h1 className="font-bold">Music Chat</h1>

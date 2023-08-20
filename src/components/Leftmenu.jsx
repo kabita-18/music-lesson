@@ -46,7 +46,7 @@ const Leftmenu = () => {
         )}
 
         <div
-          className={`flex  bg-white rounded-full p-2 ${!open && "hidden"} `}
+          className={`flex  bg-white rounded-full p-1 ${!open && "hidden"} `}
         >
           <div
             className={`h-10 w-10 overflow-hidden rounded-full md:ml-4 cursor-pointer  mr-2 ${
@@ -78,7 +78,7 @@ const Leftmenu = () => {
               key={index}
               className="text-white text-l flex items-center gap-x-4 cursor-pointer  hover:bg-white hover:text-black rounded-full p-3 mt-1"
             >
-              {/* <Link to={`/course/${menu.title}`}  className="flex items-center"> */}
+              
               <span className="text-2xl block float-left">
                 {menu.icon ? menu.icon : <BiSolidDashboard />}
               </span>
@@ -90,7 +90,7 @@ const Leftmenu = () => {
               >
                 {menu.title}
               </span>
-              {/* </Link> */}
+              
             </Link>
           ))}
         </ul>

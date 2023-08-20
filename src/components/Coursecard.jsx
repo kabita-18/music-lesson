@@ -12,8 +12,8 @@ import { BiSolidStopwatch } from "react-icons/bi";
 const CourseCard = () => {
   return (
     <Card className="w-400 rounded-lg p-3 static ">
-      <div className="flex justify-between items-center mx-3 ">
-        <h3 className="font-bold">Music Basics</h3>
+      <div className="flex justify-between items-center mx-3  ">
+        <h3 className="font-bold ">Music Basics</h3>
         <div className="flex item-center rounded-full">
           <img
             className="h-10 w-10 object-cover rounded-full cursor-pointer"
@@ -21,32 +21,32 @@ const CourseCard = () => {
             alt="user"
           />
 
-          <Typography className="text-black px-4  font-medium">
+          <Typography className="text-black px-3 mt-2 font-medium">
             John Mayer
           </Typography>
         </div>
       </div>
 
-      <div className="relative rounded-3xl m-3 h-[320px]">
+      <div className="relative rounded-3xl m-3 h-[200px] md:h-[320px]">
         <img
-          className="rounded-3xl h-[320px] w-full object-cover"
+          className="rounded-3xl h-[200px] md:h-[320px] w-full object-cover"
           src={piano}
           alt="piano"
         />
-        <div className="flex absolute justify-center space-x-4 py-4 bottom-0 w-full px-3 pl-12 border focus:outline-none hover:border-blue-500 bg-slate-500 opacity-60 rounded-3xl  ">
-          <span className="bg-white p-4 rounded-full">
+        <div className="flex absolute justify-center space-x-1 md:space-x-4 py-4 bottom-0 w-full px-4 border focus:outline-none hover:border-blue-500 bg-slate-500 opacity-60 rounded-3xl  ">
+          <span className="bg-white p-1 md:p-4 rounded-full">
             <AiFillPlayCircle />
           </span>
-          <span className="bg-white p-4 rounded-full">
+          <span className="bg-white p-1 md:p-4 rounded-full">
             <BsFillMicMuteFill />
           </span>
-          <span className="bg-white p-4 rounded-full">
+          <span className="bg-white p-1 md:p-4 rounded-full">
             <BiSolidMessageRounded />
           </span>
-          <span className="bg-white p-4 rounded-full">
+          <span className="bg-white p-1 md:p-4 rounded-full">
             <BiDotsVerticalRounded />
           </span>
-          <span className="bg-white p-4 rounded-full">
+          <span className="bg-white p-1 md:p-4 rounded-full">
             <MdCallEnd />
           </span>
         </div>

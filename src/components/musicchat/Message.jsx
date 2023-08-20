@@ -2,28 +2,45 @@ import React, { useState } from "react";
 import { MdSend } from "react-icons/md";
 
 const Message = () => {
-  const profileNames = ["John Doe", "Jane Smith"];
+  const profileNames = ["Adam Smith", "Emily Brown", "Music Theories"];
   const profileImages = [
     "https://xsgames.co/randomusers/assets/avatars/female/67.jpg",
     "https://xsgames.co/randomusers/assets/avatars/female/67.jpg",
   ];
 
   const [messages, setMessages] = useState([
-    { text: "I need help with music notes", sender: "you", time: "10:00 AM" },
+    { text: "I need help with music notes", sender: "other", time: "9:28 AM" },
     {
       text: "Is music theory different for each instrument",
       sender: "other",
-      time: "10:05 AM",
+      time: "9:29 AM",
     },
     {
-      text: "Is music theory different for each instrument",
+      text: "Hey guys, let's practice more to improve!",
       sender: "you",
-      time: "10:05 AM",
+      
     },
     {
-      text: "Is music theory different for each instrument",
+      text: "haha",
       sender: "other",
-      time: "10:05 AM",
+      
+    },
+    {
+      text: "But i had to tune my",
+      sender: "other",
+      time: "9:32 AM",
+    },
+
+    {
+      text: "Learn the Basics",
+      sender: "other",
+      time: "Beginner",
+    },
+
+    {
+      text: "Understand Music Notes",
+      sender: "you",
+      
     },
   ]);
 
@@ -54,18 +71,18 @@ const Message = () => {
                   <img
                     src={profileImages[1]}
                     alt={profileNames[1]}
-                    className="w-6 h-6 rounded-full mr-2 align-top"
+                    className="w-6 h-6 rounded-full mr-2 align-top "
                   />
                 )}
 
                 <div>
                   <p className="flex justify-between">
-                    <span className="text-xs">
+                    <span className="text-xs text-slate-500 font-semibold mb-1" >
                       {message.sender === "you" ? "You" : profileNames[1]}
                     </span>
                     <span className="text-xs">{message.time}</span>
                   </p>
-                  <p className="bg-[#f0f0f0] rounded-lg p-3 text-sm">
+                  <p className="bg-[#f0f0f0] rounded-3xl p-3 text-sm text-slate-800 font-normal">
                     {message.text}
                   </p>
                 </div>
