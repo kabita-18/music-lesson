@@ -43,11 +43,12 @@ const Message = () => {
     <div className="h-[420px] w-[300px] flex flex-col ">
       <div className="flex flex-col p-4 overflow-y-scroll no-scrollbar">
         {messages.map((message, index) => (
-          <div
-            key={index}
-            className="mb-4"
-          >
-            <div className={`p-2 max-w-[200px] ${message.sender === "you" && "float-right"}`}>
+          <div key={index} className="mb-4">
+            <div
+              className={`p-2 max-w-[200px] ${
+                message.sender === "you" && "float-right"
+              }`}
+            >
               <div className="flex items-center mb-1">
                 {message.sender !== "you" && (
                   <img
@@ -64,7 +65,9 @@ const Message = () => {
                     </span>
                     <span className="text-xs">{message.time}</span>
                   </p>
-                  <p className="bg-[#f0f0f0] rounded-lg p-3 text-sm">{message.text}</p>
+                  <p className="bg-[#f0f0f0] rounded-lg p-3 text-sm">
+                    {message.text}
+                  </p>
                 </div>
               </div>
             </div>
