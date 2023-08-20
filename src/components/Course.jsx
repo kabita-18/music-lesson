@@ -46,13 +46,13 @@ const musicCarouselData = [
 
 const Course = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="left basis-9/12 max-w-[70%]">
+    <div className="flex flex-col lg:flex-row">
+      <div className="left lg:basis-8/12 lg:max-w-[70%]">
         <Header />
         <CourseCard />
         <MusicCarousel data={musicCarouselData} />
       </div>
-      <div className="right md:w-3/12 ">
+      <div className="right lg:w-3/12 ">
         <Chat />
       </div>
     </div>

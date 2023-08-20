@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const IconBlock = ({ icon, text, accordianicon }) => {
   return (
-    <div className="flex items-center bg-white rounded-3xl border border-black-150  sm:w-full md:w-[380px] mt-2 ml-2 px-2 py-1">
+    <div className="flex items-center bg-white rounded-3xl border border-black-150  mt-2 ml-2 px-2 py-1">
       <div className="h-8 w-8 overflow-hidden rounded-full cursor-pointer mr-2 bg-black text-white text-center flex items-center justify-center">
         {icon}
       </div>

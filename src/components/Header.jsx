@@ -7,8 +7,8 @@ import { FiMessageSquare } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <div className="flex items-center space-x-4 py-4 w-full m-auto">
-      <Typography className="text-2xl font-bold mr-6 ml-4 whitespace-nowrap">
+    <div className="flex flex-col md:flex-row items-center md:space-x-4 md:py-4 w-full m-auto">
+      <Typography className="text-2xl font-bold md:mr-6 md:ml-4 whitespace-nowrap">
         Music Lesson
       </Typography>
 
@@ -20,9 +20,9 @@ const Header = () => {
           placeholder="Search for songs and music notes"
         />
       </div>
-      <BsMusicNote className="ml-2 w-6 h-6 text-gray-500" />
-      <BsFileMusic className="ml-2 w-6 h-6 text-gray-500" />
-      <FiMessageSquare className="ml-2 w-6 h-6 text-gray-500" />
+      <BsMusicNote className="ml-2 w-6 h-6 hidden md:inline text-gray-500" />
+      <BsFileMusic className="ml-2 w-6 h-6 hidden md:inline text-gray-500" />
+      <FiMessageSquare className="ml-2 w-6 h-6 hidden md:inline text-gray-500" />
     </div>
   );
 };

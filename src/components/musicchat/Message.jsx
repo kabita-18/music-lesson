@@ -40,7 +40,7 @@ const Message = () => {
   };
 
   return (
-    <div className="h-[420px] w-[300px] flex flex-col ">
+    <div className="h-[420px] flex flex-col ">
       <div className="flex flex-col p-4 overflow-y-scroll no-scrollbar">
         {messages.map((message, index) => (
           <div key={index} className="mb-4">
@@ -74,11 +74,11 @@ const Message = () => {
           </div>
         ))}
       </div>
-      <div className="p-4">
+      <div className="p-4 w-full">
         <div className="flex">
           <input
             type="text"
-            className="flex-1 p-2 rounded-3xl border border-gray-300 focus:outline-none"
+            className="w-full flex-1 p-2 rounded-3xl border border-gray-300 focus:outline-none"
             placeholder="Type your comment..."
           />
           <button className=" text-grey p-2 rounded-lg" onClick={sendMessage}>
